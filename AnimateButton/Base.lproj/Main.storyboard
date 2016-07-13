@@ -21,19 +21,17 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u85-Ro-cgb" userLabel="Bar1">
                                 <frame key="frameInset" minX="16" minY="28" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.65193256580000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uu8-lz-gWt" userLabel="Bar2">
                                 <frame key="frameInset" minX="16" minY="58" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.65193256580000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5db-aE-Bau">
                                 <frame key="frameInset" minX="16" minY="91" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go"/>
+                                <state key="normal" title="View"/>
                                 <connections>
-                                    <action selector="touchGoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSI-9j-21F"/>
+                                    <action selector="touchViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iG2-l7-eya"/>
                                 </connections>
                             </button>
                         </subviews>

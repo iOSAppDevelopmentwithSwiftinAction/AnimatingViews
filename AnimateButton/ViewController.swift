@@ -15,18 +15,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.bar1.isHidden = true
-        self.bar2.isHidden = true
     }
-    @IBAction func touchGoButton(_ sender: AnyObject) {
-        self.bar1.isHidden = false
-        self.bar2.isHidden = false
-        
+    @IBAction func touchViewButton(_ sender: AnyObject) {
+        self.bar1.frame.size.width = 0
+        self.bar2.frame.size.width = 0
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
