@@ -52,12 +52,14 @@
                     <navigationItem key="navigationItem" id="czu-Gg-Me8"/>
                     <connections>
                         <outlet property="bar1" destination="u85-Ro-cgb" id="9eg-uo-wKt"/>
+                        <outlet property="bar1width" destination="bJm-pf-cEX" id="vS6-wH-fkP"/>
                         <outlet property="bar2" destination="uu8-lz-gWt" id="a3c-WZ-G0I"/>
+                        <outlet property="bar2width" destination="W5Y-pp-7Co" id="bae-aR-FK4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157" y="7"/>
+            <point key="canvasLocation" x="844" y="45"/>
         </scene>
     </scenes>
 </document>
