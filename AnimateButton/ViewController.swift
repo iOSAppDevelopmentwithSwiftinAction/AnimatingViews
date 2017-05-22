@@ -17,8 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func touchViewButton(_ sender: AnyObject) {
-        self.bar1.frame.size.width = 0
-        self.bar2.frame.size.width = 0
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
