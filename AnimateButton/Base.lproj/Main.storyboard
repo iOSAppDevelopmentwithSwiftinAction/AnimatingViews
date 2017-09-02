@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,28 +15,26 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimateButton" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u85-Ro-cgb" userLabel="Bar1">
+                                <rect key="frame" x="16" y="28" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="IgI-H7-4w3"/>
                                     <constraint firstAttribute="width" constant="25" id="bJm-pf-cEX"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uu8-lz-gWt" userLabel="Bar2">
+                                <rect key="frame" x="16" y="58" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="5cd-JH-mtI"/>
                                     <constraint firstAttribute="width" constant="25" id="W5Y-pp-7Co"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5db-aE-Bau">
-                                <frame key="frameInset" minX="16" minY="91" width="46" height="30"/>
+                                <rect key="frame" x="16" y="91" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="View"/>
                                 <connections>
@@ -45,8 +47,9 @@
                             <constraint firstItem="uu8-lz-gWt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="A9j-P7-9Qu"/>
                             <constraint firstItem="uu8-lz-gWt" firstAttribute="top" secondItem="u85-Ro-cgb" secondAttribute="bottom" constant="5" id="NVZ-7v-7Gv"/>
                             <constraint firstAttribute="leadingMargin" secondItem="u85-Ro-cgb" secondAttribute="leading" id="dWx-bk-WvO"/>
-                            <constraint firstItem="u85-Ro-cgb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="e1Q-bE-Gjm"/>
+                            <constraint firstItem="u85-Ro-cgb" firstAttribute="top" secondItem="vZa-YE-g9r" secondAttribute="top" constant="8" id="e1Q-bE-Gjm"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="vZa-YE-g9r"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kJn-ti-3Rj"/>
                     <navigationItem key="navigationItem" id="czu-Gg-Me8"/>
