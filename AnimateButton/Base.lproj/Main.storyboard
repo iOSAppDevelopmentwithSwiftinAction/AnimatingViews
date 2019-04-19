@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,6 +41,10 @@
                                     <action selector="touchViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iG2-l7-eya"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kapow" translatesAutoresizingMaskIntoConstraints="NO" id="BWH-ED-JB7">
+                                <rect key="frame" x="32" y="163" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,12 +54,18 @@
                             <constraint firstItem="u85-Ro-cgb" firstAttribute="top" secondItem="vZa-YE-g9r" secondAttribute="top" constant="8" id="e1Q-bE-Gjm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vZa-YE-g9r"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BWH-ED-JB7"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="kJn-ti-3Rj"/>
                     <navigationItem key="navigationItem" id="czu-Gg-Me8"/>
                     <connections>
                         <outlet property="bar1" destination="u85-Ro-cgb" id="9eg-uo-wKt"/>
                         <outlet property="bar2" destination="uu8-lz-gWt" id="a3c-WZ-G0I"/>
+                        <outlet property="kapow" destination="BWH-ED-JB7" id="6t5-ek-kj7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -63,4 +73,7 @@
             <point key="canvasLocation" x="1157" y="7"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kapow" width="960" height="720"/>
+    </resources>
 </document>
